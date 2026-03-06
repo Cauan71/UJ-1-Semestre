@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    
+    <div class="top1">
+    <p><u><strong>1. Identificação</strong></u> </p>
+
+    <div>
+    Data <input type="date">
+    </div>
+    </div>
+    
+      <!-- Checkbox  Fieldset -->
+    <section class="formulario">
+
+        <form method="get">
+            
+        <br>
+        <fieldset>
+
+            <!-- Nome -->
+            <label for="" id="nome">Nome: </label>
+        <input type="text" required placeholder="Digite o seu nome"> 
+
+        <br>
+        <!-- CPF -->
+        <label for="" id="cpf">CPF: </label>
+        <input type="text" required placeholder="Digite o seu cpf" maxlength="11" pattern="[0-9]{11}">
+
+        <label for="" id="rg">RG: </label>
+        <input type="text" required placeholder="Digite seu RG" maxlength="10" pattern="[0-9]{10}">
+        <br>
+
+        <label for="" id="endereco">Endereço: </label>
+        <input type="text" required placeholder="Digite seu Endereço">
+        <br>
+
+        <label for="" id="numero">Nº: </label>
+        <input type="text" required placeholder="Digite o número" pattern="[0-9]">
+        
+
+        <label for="" id="bairro"> Bairro: </label>
+        <input type="text" placeholder="Digite seu Bairro">
+        
+
+        <label for="" id="cep">CEP: </label>
+        <input type="text" required placeholder="Digite seu CEP" maxlength="8" pattern="[0-9]{11}"> 
+        
+        <br>
+        
+        <label for="" id="telefone">Telefone: </label>
+        <input type="tel" required placeholder="Digite seu telefone" maxlength="11" pattern="[0-9]{11}">
+        
+
+        <label for="" id="email">Email: </label>
+        <input type="email" required placeholder="user@gmail.com">
+        <br>
+        
+        <label for="" id="data">Data de Nascimento: </label>
+        <input type="date">
+        
+        
+        <label for="" id="idade">Idade: </label>
+        <input type="number" placeholder="Informe sua idade" pattern="[0-9]">
+        
+        
+        <label for="">Gênero: </label>
+        <select name="genero" id="genero">
+            <option value="masc">Masculino</option>
+            <option value="fem">Feminino</option>
+        </select>
+
+        <br>
+
+        <label for="" id="escolaridade">Escolaridade: </label>
+        <input type="text" required placeholder="Digite sua escolaridade">
+        
+
+        <label for="" id="profissao">Profissão: </label>
+        <input type="text" placeholder="Digite sua profissão" required>
+        <br>
+        
+        <label for="" id="naturalidade">Naturalidade: </label>
+        <input type="text" required placeholder="Digite sua Naturalidade">
+        
+        
+        <label for="">Estado Civil: </label>
+        <select name="estadocivil" id="estadocivil">
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúva(a)</option>
+        </select>
+        
+        <br>
+        
+        <label for="" id="religiao">Religião: </label>
+        <input type="text" placeholder="Informe sua religião">
+        <br>
+        
+        
+        <label for="">Aluno UNIME: </label>
+        <select name="conf" id="conf">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+        </select>
+        
+        
+        <label for="" id="curso">Curso: </label>
+        <input type="text" placeholder="Informe seu Curso" required>
+        <br>    
+
+        <label for="" id="semestre">Semestre: </label>
+        <input type="text" placeholder="Informe seu Semestre" required>
+        
+        
+        <label for="" id="turno">Turno: </label>
+        <input type="text" placeholder="Informe seu Turno" required>
+        <br>
+
+        <label for="">Senha: </label>
+        <input type="password" placeholder="Crie uma senha" required minlength="8   ">
+        
+    </fieldset>
+    
+    <p><u><strong>2. Dados sobre a Família</strong></u></p>
+
+    <fieldset>
+
+        
+        <label for="">Nome do Pai: </label> 
+        <input type="text" placeholder="Informe o Nome do seu Pai">
+
+        <label for="">Idade: </label>
+        <input type="number" placeholder="Informe a Idade">
+
+        <br>
+
+        <label for="">Profissão: </label>
+        <input type="text" placeholder="Informe a Profissão">
+
+        <label for="">Escolaridade: </label>
+        <input type="text" placeholder="Informe a Escolaridade">
+
+        <br>
+        <br>
+
+
+
+        <br>
+
+        <label for="">Nome da Mãe: </label>
+        <input type="text" placeholder="Informe o Nome da sua Mãe">
+        
+        <label for="">Idade: </label>
+        <input type="number" placeholder="Informe a Idade">
+        
+        <br>
+        
+        <label for="">Profissão: </label>
+        <input type="text" placeholder="Informe a profissão">
+
+        <label for="">Escolaridade: </label>
+        <input type="text" placeholder="Informe a escolaridade">
+
+        <br>
+        
+        <label for="">Mensagem </label>
+        <br>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite sua obsevação"></textarea>
+        
+    </fieldset>
+    <button id="botao">Enviar </button>
+    
+</section>
+</body>
+</html>
