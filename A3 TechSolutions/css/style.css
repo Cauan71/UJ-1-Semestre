@@ -1,0 +1,311 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background: #09142e;
+    padding: 15px 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #38bdf8;
+}
+.imagem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.imagem img {
+  width: 120px;
+  height: auto;
+  max-width: 100%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* ================= HOME ================= */
+
+.home{
+  padding: 80px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+
+.home-texto{
+  flex: 1;
+  min-width: 300px;
+}
+
+.home-texto h3{
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-texto p{
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+.home span{
+  color: #38bdf8;
+}
+
+
+
+.home-imagem{
+  flex: 1;
+  text-align: center;
+}
+
+.home-imagem img{
+  width: 100%;
+  border-radius: 20px;
+
+}
+
+/* ================= SOBRE ================= */
+
+.sobre{
+    padding: 70px 20px;
+    background: white;
+}
+
+.sobre h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.sobre p{
+    max-width: 800px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+/* ================= SERVIÇOS ================= */
+
+.servicos{
+    padding: 70px 20px;
+    background: #f1f5f9;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-subtitulo{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-descricao{
+    color: #555;
+}
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.service-card{
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #38bdf8; 
+    transition: 0.3s ;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-card:hover{
+    transform: translateY(-8px);
+}
+
+.service-card h3{
+    margin: 15px 0;
+}
+
+.service-card p{
+    color: #555;
+}
+
+/* ================= EQUIPE ================= */
+
+.equipe{
+    padding: 70px 20px;
+    background: #f8fafc;
+}
+
+.team-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-card{
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover{
+    transform: translateY(-8px);
+}
+
+.team-card img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3{
+    margin-bottom: 5px;
+}
+
+.team-card span{
+    display: block;
+    font-size: 14px;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.team-card p{
+    font-size: 14px;
+    color: #555;
+}
+
+/* ================= CONTATO ================= */
+
+.contato{
+    padding: 70px 20px;
+    background: white;
+    text-align: center;
+}
+
+.contato h2{
+    margin-bottom: 20px;
+}
+
+.contato p{
+    margin: 10px 0;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background: #0f172a;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-brand .imagem{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-brand .imagem img{
+    width: 120px;
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}
+
+.footer-brand p{
+    margin: 15px 0;
+}
+
+.social-links{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 15px;
+    padding: 8px;
+    
+}
+
+.social-link:hover{
+    color: #38bdf8;
+}
+
+.footer-botao{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.8;
+}
